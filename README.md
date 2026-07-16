@@ -32,4 +32,12 @@ how to group them. Or, just download each individual drivers necessary for the p
 <hr>
 
 # Demo:
+
+### Image(s):
+Fully functional demo image:
+![A picture of fully functional (no errors encountered) temperature-humidity logger.](/demo/images/funtional_demo.jpg)
+
+
+### Video(s):
 - **TBU**: I will post a simple demonstration video here.
+
