@@ -46,7 +46,7 @@ how to group them. Or, just download each individual drivers necessary for the p
 
 
 **<u>Components:<u>**
-![Sample log graph](/demo/images/sample_log/sample_log_graph.png)
+![Sample log graph](/demo/sample_log/sample_log_graph.png)
 
 
 ### Video(s):
