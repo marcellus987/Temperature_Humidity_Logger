@@ -34,8 +34,15 @@ how to group them. Or, just download each individual drivers necessary for the p
 # Demo:
 
 ### Image(s):
-Fully functional demo image:
+
+**<u>Fully functional demo image:<u>** 
 ![A picture of fully functional (no errors encountered) temperature-humidity logger.](/demo/images/funtional_demo.jpg)
+
+**<u>SD card error demo image:<u>** 
+![A picture of SD card error encountered by the temperature-humidity logger.](/demo/images/sd_error_demo.jpg)
+
+**<u>Components:<u>**
+![Components used in this project.](/demo/images/components.jpg)
 
 
 ### Video(s):
