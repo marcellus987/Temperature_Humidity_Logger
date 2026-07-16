@@ -45,6 +45,10 @@ how to group them. Or, just download each individual drivers necessary for the p
 ![Components used in this project.](/demo/images/components.jpg)
 
 
+**<u>Components:<u>**
+![Sample log graph](/demo/images/sample_log/sample_log_graph.png)
+
+
 ### Video(s):
 - **TBU**: I will post a simple demonstration video here.
 
