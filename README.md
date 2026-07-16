@@ -42,7 +42,7 @@ how to group them. Or, just download each individual drivers necessary for the p
 ![A picture of SD card error encountered by the temperature-humidity logger.](/demo/images/sd_error_demo.jpg)
 
 **<u>Components:<u>**
-- NUCLEO-STM32F411RE, SD card module, DHT22 sensor, LCD1602, and potentiometer for LCD.
+- NUCLEO-STM32F411RE, SD card module, DS3231 RTC module, DHT22 sensor, LCD1602, and potentiometer for LCD.
 ![Components used in this project.](/demo/images/components.jpg)
 
 
