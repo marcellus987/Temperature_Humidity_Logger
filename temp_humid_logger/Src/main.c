@@ -81,6 +81,7 @@ int main(void) {
 #endif
 		res = f_write(&file, header, headerLen, &bw);
 		checkFRESULT(res);
+		f_sync(&file);
 	}
 
 	/***** Data logging phase. *****/
@@ -114,7 +115,7 @@ int main(void) {
 
 	/* Print data to LCD module. */
 	for(int i = 0; i < strlen(displayBuff); ++i) {
-		if(displayBuff[i] == 'T'){
+		if(displayBuff[i] == 'T' || i == 15) {
 			send_command(0xC0);
 		}
 		send_data(displayBuff[i]);
@@ -152,14 +153,24 @@ void RTC_WKUP_IRQHandler(void) {
 
 /* If at any moment user-led on board lit, there is a problem with file operation. */
 void checkFRESULT(FRESULT res) {
+	char errorMsg[] = "SD card Error!";
 	if(res != FR_OK) {
+		lcd_cls();
 //		debug_led_on();
 //		printf("res != FR_OK...\r\n");
+		/* Print data to LCD module. */
+		for(int i = 0; i < strlen(errorMsg); ++i) {
+			if(i == 15) {
+				send_command(0xC0);
+			}
+			send_data(errorMsg[i]);
+		}
+		delay_ms(2000);
 	}
-	else {
-//		debug_led_off();
-//		printf("res == FR_OK...\r\n");
-	}
+//	else {
+////		debug_led_off();
+////		printf("res == FR_OK...\r\n");
+//	}
 }
 
 
